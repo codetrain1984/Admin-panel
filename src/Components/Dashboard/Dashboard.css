@@ -1,0 +1,42 @@
+.dashboard {
+  flex: 4;
+  width: 100%;
+  background-color: #fff;
+  height: 100vh;
+  border-radius: 7px;
+}
+.dashboard-info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  background-color: inherit;
+}
+.dashboard-box {
+  width: 250px;
+  border-radius: 7px;
+  margin: 10px;
+  margin-top: 15px;
+  padding: 20px;
+  background-color: rgb(187, 141, 230);
+  text-align: left;
+  color: #fff;
+}
+.dashboard-box.one {
+  background-color: #ff69b4;
+}
+.dashboard-box.two {
+  background-color: #84ebff;
+}
+.dashboard-box.three {
+  background-color: #39b3ff;
+}
+.dashboard-box.four {
+  background-color: #007fcb;
+}
+.dashboard-box h4,
+h2,
+p {
+  background-color: inherit;
+}

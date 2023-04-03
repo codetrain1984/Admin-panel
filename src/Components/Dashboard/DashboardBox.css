@@ -1,0 +1,15 @@
+.dashboard-box {
+  width: 250px;
+  border-radius: 7px;
+  margin: 10px;
+  margin-top: 15px;
+  padding: 20px;
+  background-color: rgb(187, 141, 230);
+  text-align: left;
+  color: #fff;
+}
+.dashboard-box h4,
+h2,
+p {
+  background-color: inherit;
+}

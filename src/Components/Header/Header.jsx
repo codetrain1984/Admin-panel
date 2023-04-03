@@ -15,16 +15,24 @@ export default function Header() {
         </div>
         <div className="header-notification">
           <div className="notif-info">
-            <Badge badgeContent={4} color="primary">
+            <Badge
+              badgeContent={4}
+              color="primary"
+              sx={{ backgroundColor: 'white' }}
+            >
               <NotificationsNoneOutlinedIcon
                 className="notif-icon"
-                sx={{ fontSize: 30, color: 'gray' }}
+                sx={{ fontSize: 30, color: 'gray', backgroundColor: 'white' }}
               />
             </Badge>
-            <Badge badgeContent={4} color="secondary">
+            <Badge
+              badgeContent={4}
+              color="secondary"
+              sx={{ backgroundColor: 'white' }}
+            >
               <ChatBubbleOutlineRoundedIcon
                 className="notif-icon"
-                sx={{ fontSize: 30, color: 'gray' }}
+                sx={{ fontSize: 30, color: 'gray', backgroundColor: 'white' }}
               />
             </Badge>
           </div>
