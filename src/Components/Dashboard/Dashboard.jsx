@@ -17,18 +17,18 @@ export default function Dashboard() {
           <p>saved 25%</p>
         </div>
         <div className="dashboard-box two">
-          <h4>Total Income</h4>
-          <h2>$579,000</h2>
+          <h4>Total Expences</h4>
+          <h2>$79,000</h2>
           <p>saved 25%</p>
         </div>
         <div className="dashboard-box three">
-          <h4>Total Income</h4>
-          <h2>$579,000</h2>
+          <h4>Cash on Hand</h4>
+          <h2>$92,000</h2>
           <p>saved 25%</p>
         </div>
         <div className="dashboard-box four">
-          <h4>Total Income</h4>
-          <h2>$579,000</h2>
+          <h4>Net Profit Margin</h4>
+          <h2>$880,000</h2>
           <p>saved 25%</p>
         </div>
       </div>
