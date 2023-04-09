@@ -9,3 +9,7 @@
 .sidebar-items {
   padding: 30px;
 }
+.accordion-title {
+  display: flex;
+  align-items: center;
+}

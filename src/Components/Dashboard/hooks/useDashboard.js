@@ -2,22 +2,22 @@ const useDashboard = () => {
   const dashboardData = [
     {
       title: 'Total Income',
-      price: '579,000',
+      price: '579000',
       className: 'one',
     },
     {
       title: 'Total Expense',
-      price: '79,000',
+      price: '79000',
       className: 'two',
     },
     {
       title: 'Cash on Hand',
-      price: '92,000',
+      price: '92000',
       className: 'three',
     },
     {
       title: 'Net Profi Margin',
-      price: '779,000',
+      price: '779000',
       className: 'four',
     },
   ]

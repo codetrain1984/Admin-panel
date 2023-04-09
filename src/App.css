@@ -3,7 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+.App {
+  background-color: #f7faff;
+}
 main {
   flex: 1;
   display: flex;

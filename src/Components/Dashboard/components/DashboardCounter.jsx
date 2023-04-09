@@ -1,19 +1,19 @@
 import React, { useEffect, useState } from 'react'
 
 export default function DashboardCounter({ price }) {
-  console.log(price)
+  console.log('Counter run')
   const [boxCounter, setBoxCounter] = useState(0)
-  useEffect(() => {
-    let interval = setInterval(() => {
-      setBoxCounter((prev) => prev + 100)
-    }, 1)
+  // useEffect(() => {
+  //   let interval = setInterval(() => {
+  //     setBoxCounter((prev) => prev + 100)
+  //   }, 1)
 
-    if (boxCounter == { price }) {
-      clearInterval(interval)
-    }
+  //   if (boxCounter === 100000) {
+  //     clearInterval(interval)
+  //   }
 
-    return () => clearInterval(interval)
-  }, [boxCounter])
+  //   return () => clearInterval(interval)
+  // }, [boxCounter])
 
   return <span>{boxCounter}</span>
 }

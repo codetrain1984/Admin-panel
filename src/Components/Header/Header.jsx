@@ -10,7 +10,7 @@ export default function Header() {
     <div className="header">
       <div className="header-container">
         <div className="header-search">
-          <SearchIcon className="search-logo" />
+          <SearchIcon className="search-logo" color="#B0A8B9" />
           <input type="text" placeholder="Search ..." />
         </div>
         <div className="header-notification">
@@ -22,7 +22,11 @@ export default function Header() {
             >
               <NotificationsNoneOutlinedIcon
                 className="notif-icon"
-                sx={{ fontSize: 30, color: 'gray', backgroundColor: 'white' }}
+                sx={{
+                  fontSize: 30,
+                  color: '#B0A8B9',
+                  backgroundColor: 'white',
+                }}
               />
             </Badge>
             <Badge
@@ -32,7 +36,11 @@ export default function Header() {
             >
               <ChatBubbleOutlineRoundedIcon
                 className="notif-icon"
-                sx={{ fontSize: 30, color: 'gray', backgroundColor: 'white' }}
+                sx={{
+                  fontSize: 30,
+                  color: '#B0A8B9',
+                  backgroundColor: 'white',
+                }}
               />
             </Badge>
           </div>
