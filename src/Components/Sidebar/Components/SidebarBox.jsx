@@ -6,10 +6,15 @@ import {
   Typography,
 } from '@mui/material'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
+import { Link } from 'react-router-dom'
 
 export default function SidebarBox({
   title,
   icon,
+  link1,
+  link2,
+  link3,
+  link4,
   subtitle1,
   subtitle2,
   subtitle3,
@@ -44,14 +49,27 @@ export default function SidebarBox({
       </AccordionSummary>
       <AccordionDetails sx={{ marginLeft: 5 }}>
         <Typography variant="body2" sx={{ color: '#B0A8B9', fontSize: 12 }}>
-          {subtitle1}
+          <Link to={link1} style={{ listStyle: 'none' }}>
+            {subtitle1}
+          </Link>
         </Typography>
         <Typography
           variant="body2"
           sx={{ color: '#B0A8B9', fontSize: 12 }}
           mt="10px"
         >
-          {subtitle2}
+          <Link to={link2} sx={{ listStyle: 'none' }}>
+            {subtitle2}
+          </Link>
+        </Typography>
+        <Typography
+          variant="body2"
+          sx={{ color: '#B0A8B9', fontSize: 12 }}
+          mt="10px"
+        >
+          <Link to={link3} style={{ listStyle: 'none' }}>
+            {subtitle3}
+          </Link>
         </Typography>
       </AccordionDetails>
     </Accordion>

@@ -1,20 +1,11 @@
+import { useRoutes } from 'react-router-dom'
+
 import './App.css'
-import Dashboard from './Components/Dashboard/Dashboard'
-import Header from './Components/Header/Header'
-import Sidebar from './Components/Sidebar/Sidebar'
+import routes from './routes'
 
 function App() {
-  return (
-    <div className="App">
-      <main>
-        <Sidebar />
-        <div className="header-dashborard">
-          <Header />
-          <Dashboard />
-        </div>
-      </main>
-    </div>
-  )
+  const router = useRoutes(routes)
+  return <div className="App">{router}</div>
 }
 
 export default App
