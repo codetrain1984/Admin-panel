@@ -6,3 +6,12 @@
 .App {
   background-color: #f7faff;
 }
+main {
+  flex: 1;
+  display: flex;
+}
+.header-dashborard {
+  width: 100%;
+  height: 100vh;
+  margin-right: 20px;
+}
