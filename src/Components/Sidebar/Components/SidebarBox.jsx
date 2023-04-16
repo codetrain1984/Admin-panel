@@ -47,9 +47,9 @@ export default function SidebarBox({
           </Typography>
         </div>
       </AccordionSummary>
-      <AccordionDetails sx={{ marginLeft: 5 }}>
+      <AccordionDetails sx={{ marginLeft: 1 }}>
         <Typography variant="body2" sx={{ color: '#B0A8B9', fontSize: 12 }}>
-          <Link to={link1} style={{ listStyle: 'none' }}>
+          <Link to={link1} style={{ textDecoration: 'none', color: 'gray' }}>
             {subtitle1}
           </Link>
         </Typography>
@@ -58,7 +58,7 @@ export default function SidebarBox({
           sx={{ color: '#B0A8B9', fontSize: 12 }}
           mt="10px"
         >
-          <Link to={link2} sx={{ listStyle: 'none' }}>
+          <Link to={link2} style={{ textDecoration: 'none', color: 'gray' }}>
             {subtitle2}
           </Link>
         </Typography>
@@ -67,7 +67,7 @@ export default function SidebarBox({
           sx={{ color: '#B0A8B9', fontSize: 12 }}
           mt="10px"
         >
-          <Link to={link3} style={{ listStyle: 'none' }}>
+          <Link to={link3} style={{ textDecoration: 'none', color: 'gray' }}>
             {subtitle3}
           </Link>
         </Typography>
