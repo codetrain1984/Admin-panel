@@ -40,3 +40,6 @@ h2,
 p {
   background-color: inherit;
 }
+.charts {
+  margin: 0 40px;
+}
