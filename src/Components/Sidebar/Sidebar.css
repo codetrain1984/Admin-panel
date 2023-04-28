@@ -1,8 +1,10 @@
 .sidebar {
   padding: 30px;
+  background-color: #f7faff;
+  position: fixed;
 }
 .sidebar-logo {
-  width: 140px;
+  width: 220px;
   background-color: #fff;
   padding: 30px 20px;
 }

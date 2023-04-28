@@ -8,13 +8,14 @@ function App() {
   const router = useRoutes(routes)
   return (
     <div className="App">
-      <main>
+      <div className="sideComponent">
         <Sidebar />
-        <div className="header-dashborard">
-          <Header />
-          {router}
-        </div>
-      </main>
+      </div>
+
+      <div className="header-dashborard">
+        <Header />
+        {router}
+      </div>
     </div>
   )
 }

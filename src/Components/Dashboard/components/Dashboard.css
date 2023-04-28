@@ -14,14 +14,14 @@
   background-color: inherit;
 }
 .dashboard-box {
-  width: 290px;
   border-radius: 7px;
   margin: 10px;
-  margin-top: 15px;
+  margin-top: 30px;
   padding: 35px;
-  background-color: rgb(187, 141, 230);
   text-align: left;
   color: #fff;
+  flex-basis: 16rem;
+  height: 156px;
 }
 .dashboard-box.one {
   background-color: #ff69b4;
@@ -34,6 +34,7 @@
 }
 .dashboard-box.four {
   background-color: #007fcb;
+  font-size: 15.55px;
 }
 .dashboard-box h4,
 h2,

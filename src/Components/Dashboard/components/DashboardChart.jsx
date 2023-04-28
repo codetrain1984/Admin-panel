@@ -10,7 +10,6 @@ import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward'
 import {
   BarChart,
   Bar,
-  Cell,
   XAxis,
   YAxis,
   CartesianGrid,
@@ -21,46 +20,59 @@ import {
 
 const data = [
   {
-    name: 'Page A',
-    uv: 4000,
+    name: '01 Jan',
     pv: 2400,
     amt: 2400,
   },
   {
-    name: 'Page B',
-    uv: 3000,
+    name: '03 Jan',
     pv: 1398,
     amt: 2210,
   },
   {
-    name: 'Page C',
-    uv: 2000,
+    name: '05 Jan',
     pv: 9800,
     amt: 2290,
   },
   {
-    name: 'Page D',
-    uv: 2780,
+    name: '07 Jan',
     pv: 3908,
     amt: 2000,
   },
   {
-    name: 'Page E',
-    uv: 1890,
+    name: '09 Jan',
     pv: 4800,
     amt: 2181,
   },
   {
-    name: 'Page F',
-    uv: 2390,
+    name: '11 Jan',
     pv: 3800,
     amt: 2500,
   },
   {
-    name: 'Page G',
-    uv: 3490,
-    pv: 4300,
-    amt: 2100,
+    name: '13 Jan',
+    pv: 5800,
+    amt: 1500,
+  },
+  {
+    name: '17 Jan',
+    pv: 1200,
+    amt: 1500,
+  },
+  {
+    name: '20 Jan',
+    pv: 7500,
+    amt: 6500,
+  },
+  {
+    name: '22 Jan',
+    pv: 3900,
+    amt: 4500,
+  },
+  {
+    name: '23 Jan',
+    pv: 6100,
+    amt: 3000,
   },
 ]
 
@@ -76,7 +88,7 @@ export default class Example extends PureComponent {
           alignItems="center"
           justifyContent="space-between"
         >
-          <Box>
+          <Box ml={5} mb={2}>
             <Typography variant="h6">AP and AR Balance</Typography>
             <Typography variant="body2" color="primary.light">
               Avg. $5,309
@@ -113,7 +125,7 @@ export default class Example extends PureComponent {
           </Box>
         </Stack>
 
-        <ResponsiveContainer width="100%" height="85%">
+        <ResponsiveContainer width="100%" height="90%">
           <BarChart
             width={500}
             height={300}
@@ -131,7 +143,7 @@ export default class Example extends PureComponent {
             <Tooltip />
             <Legend />
             <Bar dataKey="pv" stackId="a" fill="#8884d8" />
-            <Bar dataKey="uv" stackId="a" fill="#82ca9d" />
+            {/* <Bar dataKey="uv" stackId="a" fill="#82ca9d" /> */}
           </BarChart>
         </ResponsiveContainer>
       </>

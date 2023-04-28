@@ -1,4 +1,4 @@
-import DashboardCounter from './DashboardCounter'
+// import DashboardCounter from './DashboardCounter'
 
 export default function DashboardBox({ title, price, className }) {
   console.log(price)

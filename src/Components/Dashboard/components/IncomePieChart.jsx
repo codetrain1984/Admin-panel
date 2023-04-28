@@ -1,6 +1,7 @@
 import { Stack, Typography } from '@mui/material'
 import React, { PureComponent } from 'react'
-import { PieChart, Pie, Sector, Cell, ResponsiveContainer } from 'recharts'
+import { Link } from 'react-router-dom'
+import { PieChart, Pie, Cell } from 'recharts'
 
 const data = [
   { name: 'Group A', value: 400 },
@@ -8,7 +9,7 @@ const data = [
   { name: 'Group C', value: 300 },
   { name: 'Group D', value: 200 },
 ]
-const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042']
+const COLORS = ['#84ebff', '#39b3ff', '#007fcb', '#ff69b4']
 
 export default class Example extends PureComponent {
   static demoUrl = 'https://codesandbox.io/s/pie-chart-with-padding-angle-7ux0o'
@@ -19,11 +20,11 @@ export default class Example extends PureComponent {
         <Typography variant="h6" sx={{ textAlign: 'center' }}>
           % of Income Budget
         </Typography>
-        <PieChart width={800} height={370} onMouseEnter={this.onPieEnter}>
+        <PieChart width={800} height={320} onMouseEnter={this.onPieEnter}>
           <Pie
             data={data}
             cx={120}
-            cy={200}
+            cy={150}
             innerRadius={60}
             outerRadius={80}
             fill="#8884d8"
@@ -38,6 +39,17 @@ export default class Example extends PureComponent {
             ))}
           </Pie>
         </PieChart>
+        <Stack>
+          <Typography
+            variant="body2"
+            color="primary.light"
+            sx={{ textAlign: 'center', marginBottom: 2, marginTop: 2 }}
+          >
+            <Link style={{ textDecoration: 'none', color: '#39b3ff' }}>
+              View Full Report
+            </Link>
+          </Typography>
+        </Stack>
       </Stack>
     )
   }
