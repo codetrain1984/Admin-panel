@@ -1,30 +1,42 @@
-import { Box, Grid, Stack } from '@mui/material'
+import { Box, Grid, Stack, styled } from '@mui/material'
 import './components/Dashboard.css'
 import DashboardBox from './components/DashboardBox'
 import DashboardChart from './components/DashboardChart'
 import IncomePieChart from './components/IncomePieChart'
 import ExpensePieChart from './components/ExpensePieChart'
-import useDashboard from './hooks/useDashboard'
+import useDashboard from '../../hooks/useDashboard'
 import EarningChart from './components/EarningChart'
 import ServicesChart from './components/ServicesChart'
 import DisputedOverdueChart from './components/DisputedOverdueChart'
 import DisputedInvoicesChart from './components/DisputedInvoicesChart'
 import InvoicesChart from './components/InvoicesChart'
-// import DashboardCounter from './components/DashboardCounter'
 
 export default function Dashboard() {
   const { dashboardData } = useDashboard()
 
+  const DashbBox = styled(Box)({
+    width: '100%',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-evenly',
+    marginTop: '20px',
+    backgroundColor: 'inherit',
+  })
   return (
-    <div className="dashboard">
-      <div className="dashboard-info">
+    <Box
+      sx={{
+        flex: 4,
+        width: '100%',
+        backgroundColor: '#fff',
+        height: '100vh',
+        borderRadius: '7px',
+      }}
+    >
+      <DashbBox>
         {dashboardData.map((item) => (
-          <>
-            <DashboardBox key={item.className} {...item} />
-            {/* <DashboardCounter price={item.price} /> */}
-          </>
+          <DashboardBox key={item.className} {...item} />
         ))}
-      </div>
+      </DashbBox>
       <Stack mx={5}>
         <Box>
           <Grid container my={4} rowSpacing={2} columnSpacing={2}>
@@ -82,6 +94,6 @@ export default function Dashboard() {
           </Grid>
         </Box>
       </Stack>
-    </div>
+    </Box>
   )
 }

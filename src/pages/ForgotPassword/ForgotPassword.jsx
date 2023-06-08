@@ -1,5 +1,4 @@
 import React from 'react'
-import './ForgotPassword.css'
 import { Box, Button, Grid, Stack, TextField, Typography } from '@mui/material'
 
 export default function ForgotPassword() {

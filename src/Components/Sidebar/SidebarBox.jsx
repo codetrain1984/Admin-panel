@@ -35,7 +35,7 @@ export default function SidebarBox({
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <div className="accordion-title">
+          <Stack direction="row" sx={{ display: 'flex', alignItems: 'center' }}>
             {icon}
             <Typography
               variant="body2"
@@ -45,7 +45,7 @@ export default function SidebarBox({
             >
               {title}
             </Typography>
-          </div>
+          </Stack>
         </AccordionSummary>
         <AccordionDetails sx={{ marginLeft: 1 }}>
           <Typography variant="body2" sx={{ color: '#B0A8B9', fontSize: 12 }}>

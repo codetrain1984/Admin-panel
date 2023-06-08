@@ -4,15 +4,34 @@ import './Login.css'
 import {
   Box,
   Button,
+  Divider,
   Grid,
   Link,
   Stack,
   TextField,
   Typography,
+  styled,
 } from '@mui/material'
 import FacebookIcon from '@mui/icons-material/Facebook'
 import GoogleIcon from '@mui/icons-material/Google'
-// import LoginOr from './Components/LoginOr'
+
+const LoginBox = styled(Box)({
+  backgroundColor: '#fff',
+  border: '1px solid gray',
+  borderRadius: 2,
+  overflow: 'hidden',
+  margin: 'auto',
+  width: 600,
+  height: 520,
+  marginTop: 10,
+})
+const Root = styled('div')(({ theme }) => ({
+  width: '100%',
+  ...theme.typography.body2,
+  '& > :not(style) + :not(style)': {
+    marginTop: theme.spacing(2),
+  },
+}))
 
 export default function Login() {
   return (
@@ -25,22 +44,10 @@ export default function Login() {
           borderRadius: 2,
         }}
       >
-        <Stack
-          xs={6}
-          sx={{
-            backgroundColor: '#fff',
-            border: '1px solid gray',
-            borderRadius: 2,
-            overflow: 'hidden',
-            margin: 'auto',
-            width: 600,
-            height: 520,
-            marginTop: 10,
-          }}
-        >
-          <Box sx={{ backgroundColor: '#f7faff', padding: 3 }}>
+        <LoginBox xs={6}>
+          <Stack sx={{ backgroundColor: '#f7faff', padding: 3 }}>
             <Typography variant="h5">Log in</Typography>
-          </Box>
+          </Stack>
           <Stack spacing={2} direction="column" sx={{ margin: 3 }}>
             <Button
               variant="contained"
@@ -53,8 +60,12 @@ export default function Login() {
               Log In With Google
             </Button>
             <Stack sx={{ textAlign: 'center' }}>
+              <Root>
+                <Divider sx={{ marginTop: '10px', marginBottom: '10px' }}>
+                  OR
+                </Divider>
+              </Root>
               {/* <LoginOr /> */}
-              OR
             </Stack>
             <Stack spacing={2}>
               <TextField label="Enter your email" />
@@ -81,7 +92,7 @@ export default function Login() {
               </Typography>
             </Stack>
           </Stack>
-        </Stack>
+        </LoginBox>
       </Grid>
     </Grid>
   )

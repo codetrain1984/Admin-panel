@@ -1,13 +1,16 @@
-// import DashboardCounter from './DashboardCounter'
-
+import { Box, Typography } from '@mui/material'
 import DashboardCounter from './DashboardCounter'
 
 export default function DashboardBox({ title, price, className }) {
   return (
-    <div className={`dashboard-box ${className}`}>
-      <h2 style={{ marginBottom: 6 }}>{title}</h2>
+    <Box className={`dashboard-box ${className}`}>
+      <Typography variant="h5" style={{ marginBottom: 6 }}>
+        {title}
+      </Typography>
       <DashboardCounter price={+price} />
-      <p style={{ marginTop: 4 }}>saved 25%</p>
-    </div>
+      <Typography variant="body2" sx={{ marginTop: 4 }}>
+        saved 25%
+      </Typography>
+    </Box>
   )
 }
