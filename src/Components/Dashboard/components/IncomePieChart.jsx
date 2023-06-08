@@ -20,7 +20,7 @@ export default class Example extends PureComponent {
         <Typography variant="h6" sx={{ textAlign: 'center' }}>
           % of Income Budget
         </Typography>
-        <PieChart width={800} height={320} onMouseEnter={this.onPieEnter}>
+        <PieChart width={250} height={320} onMouseEnter={this.onPieEnter}>
           <Pie
             data={data}
             cx={120}

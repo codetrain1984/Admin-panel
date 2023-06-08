@@ -1,12 +1,5 @@
-import {
-  Accordion,
-  AccordionSummary,
-  Box,
-  Stack,
-  Typography,
-} from '@mui/material'
+import { Box, Stack, Typography } from '@mui/material'
 import React, { PureComponent } from 'react'
-import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward'
 import {
   BarChart,
   Bar,

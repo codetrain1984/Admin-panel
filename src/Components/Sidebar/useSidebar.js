@@ -17,6 +17,7 @@ const useSidebar = () => {
       link4: '',
       subtitle1: 'Classic',
       subtitle2: 'Minimal',
+      panelNum: 'panel1',
     },
     {
       title: 'Pages',
@@ -27,6 +28,7 @@ const useSidebar = () => {
       subtitle1: 'Login',
       subtitle2: 'Register',
       subtitle3: 'Forgot Password',
+      panelNum: 'panel2',
     },
     {
       title: 'Application',
@@ -38,6 +40,7 @@ const useSidebar = () => {
       subtitle1: 'Mail Box',
       subtitle2: 'Chat',
       subtitle3: 'FAQ',
+      panelNum: 'panel3',
     },
     {
       title: 'UI Component',
@@ -49,6 +52,7 @@ const useSidebar = () => {
       subtitle1: 'Elements',
       subtitle2: 'Components',
       subtitle3: 'one',
+      panelNum: 'panel4',
     },
     {
       title: 'Widgets',
@@ -59,6 +63,7 @@ const useSidebar = () => {
       link4: '',
       subtitle1: 'Chart Box 1',
       subtitle2: 'Profile Box',
+      panelNum: 'panel5',
     },
     {
       title: 'Forms',
@@ -69,6 +74,7 @@ const useSidebar = () => {
       link4: '',
       subtitle1: 'Elements',
       subtitle2: 'Widgets',
+      panelNum: 'panel6',
     },
     {
       title: 'Charts',
@@ -80,6 +86,7 @@ const useSidebar = () => {
       subtitle1: 'ChartJS',
       subtitle2: 'Apex Chart',
       subtitle3: 'Chart Sparkline',
+      panelNum: 'panel7',
     },
   ]
 

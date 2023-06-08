@@ -6,6 +6,7 @@
 .App {
   background-color: #f7faff;
   display: flex;
+  min-height: 100vh;
 }
 
 .sideComponent {

@@ -15,3 +15,6 @@
   display: flex;
   align-items: center;
 }
+.sidebar-container {
+  overflow: auto;
+}

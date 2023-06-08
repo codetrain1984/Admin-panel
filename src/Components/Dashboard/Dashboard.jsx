@@ -7,6 +7,10 @@ import ExpensePieChart from './components/ExpensePieChart'
 import useDashboard from './hooks/useDashboard'
 import EarningChart from './components/EarningChart'
 import ServicesChart from './components/ServicesChart'
+import DisputedOverdueChart from './components/DisputedOverdueChart'
+import DisputedInvoicesChart from './components/DisputedInvoicesChart'
+import InvoicesChart from './components/InvoicesChart'
+// import DashboardCounter from './components/DashboardCounter'
 
 export default function Dashboard() {
   const { dashboardData } = useDashboard()
@@ -15,7 +19,10 @@ export default function Dashboard() {
     <div className="dashboard">
       <div className="dashboard-info">
         {dashboardData.map((item) => (
-          <DashboardBox key={item.className} {...item} />
+          <>
+            <DashboardBox key={item.className} {...item} />
+            {/* <DashboardCounter price={item.price} /> */}
+          </>
         ))}
       </div>
       <Stack mx={5}>
@@ -39,6 +46,7 @@ export default function Dashboard() {
             </Grid>
           </Grid>
         </Box>
+
         <Box>
           <Grid container my={4} rowSpacing={2} columnSpacing={2}>
             <Grid item xs={6}>
@@ -49,6 +57,26 @@ export default function Dashboard() {
             <Grid item xs={6}>
               <Box bgcolor="#f7faff" p={2} height="97%">
                 <ServicesChart />
+              </Box>
+            </Grid>
+          </Grid>
+        </Box>
+        <Box>
+          <Grid container my={4} rowSpacing={2} columnSpacing={2}>
+            <Grid item xs={3}>
+              <Box bgcolor="#f7faff" p={2} height="90%">
+                <DisputedOverdueChart />
+              </Box>
+            </Grid>
+
+            <Grid item xs={6}>
+              <Box bgcolor="#f7faff" p={2} height="90%">
+                <DisputedInvoicesChart />
+              </Box>
+            </Grid>
+            <Grid item xs={3}>
+              <Box bgcolor="#f7faff" p={2} height="90%">
+                <InvoicesChart />
               </Box>
             </Grid>
           </Grid>
